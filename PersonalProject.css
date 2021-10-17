@@ -118,7 +118,7 @@ header .banner{
     justify-content: center;
     position: relative;
     min-height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     background-color: rgb(48, 24, 75);
 }
 
@@ -429,4 +429,162 @@ header .banner{
     width: 5em;
     height: auto;
     z-index: 10;
+}
+
+/* ================================================= */
+
+.project{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cadetblue; */
+    flex-direction: column;
+}
+
+.project .project_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: chartreuse; */
+    margin-top: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+.container .box:hover{
+    transform: translateY(-20px);
+
+}
+.container .box::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    /* filter: blur(10px) */
+}
+
+.container .box::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    filter: blur(10px)
+}
+
+.container .box:nth-child(2)::before,
+.container .box:nth-child(2)::after{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+
+}
+
+.container .box:nth-child(3)::before,
+.container .box:nth-child(3)::after{
+    background: linear-gradient(315deg,#4dff03,#03a9f4);
+}
+
+.container .box  span{
+    position: absolute;
+    top:6px;
+    left: 6px;
+    right:6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.container .box  span::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    height:100%;
+    background: rgba(255, 255, 255 , 0.1);
+    pointer-events: none;
+}
+
+.container .box .content{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+
+}
+
+.container .box .content h2{
+    font-size: 2em;
+    color: white;
+    margin-bottom:10px;
+
+}
+
+.container .box .content p{
+    font-size: 1.1em;
+    color: white;
+    margin-bottom:10px;
+    line-height: 1.4em;
+}
+
+.container .box .content a{
+    display: inline-block;
+    font-size: 1.1em;
+    color: black;
+    background: white;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+@media (max-width:700px) {
+    nav ul li{
+        list-style: none;
+        margin: 20px 5px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        /* padding: 0.8vw; */
+        /* margin-top: 20px; */
+        font-size: 15px;
+    }
+    .about_container .about{
+
+        width: 90%;
+    }
+
+    .skills{
+        width: 90%;
+        /* height: auto; */
+    }
+
+
 }
