@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NguyenTri</title>
+    <link rel="stylesheet" href="PersonalProject.css">
+    <link rel="stylesheet" href="./fontawesome/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+
+    <header >
+
+            <img src="/img/leaves.jpeg" class="banner"><br>
+        <div class="web_intro">
+            <span>Welcome to my website</span> <br> 
+            <a href="#" class="logo">Nguyen Tri </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="about_container">
+        <div class="about">
+            <span></span>
+            <div class="about_header"> 
+                <h1 class="glitch">
+                <!-- <span aria-hidden="true">About me</span> -->
+                About me
+                <i class="fab fa-facebook-f"></i>
+                <!-- <span aria-hidden="true">About me</span> -->
+            </h1>
+            </div>
+            
+            <p>My name is Nguyen Minh Tri, I’m a sophomore at UIT that majors in data science. I have a strong passion for IT, especially data. Becoming a Data Engineer is my dream and I choose writing website that is the first step for my career</p>
+
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="about_container">
+        <div class="skills">
+            <div class="skills_header"> 
+                <h1 class="glitch">
+                <!-- <span aria-hidden="true">About me</span> -->
+                Skills
+                <!-- <span aria-hidden="true">About me</span> -->
+            </h1>
+            </div>
+            
+            <div class="skills_box">
+                <div class="border_img">
+                    <img src="./img/html.c1bb84e0.svg" alt="git">
+                </div>
+                <div class="border_img">
+                    <img src="./img/css.3ec32022.svg" alt="">
+                </div>
+                <div class="border_img">
+                    <img src="./img/javascript.081325c6.svg" alt="">
+                </div>
+                <!-- <div class="border_img">
+                    <img src="./img/react.ea350eee.svg" alt="">
+                </div> -->
+                <div class="border_img">
+                    <img src="./img/react.ea350eee.svg" alt="">
+                </div>
+
+                <div class="border_img">
+                    <img src="./img/git.43d387b7.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // window.addEventListener('scroll', function(){
+        //     const header=document.querySelector("header");
+        //     header.classList.toggle('sticky', window.scrollY > 0);
+        // });
+
+        window.addEventListener("scroll", function(){
+            const header =document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+    </script>
+</body>
+</html>
